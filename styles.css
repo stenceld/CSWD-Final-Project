@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure the body takes the full height */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  display: flex; /* Flexbox for body */
+  flex-direction: column; /* Stack items vertically */
+  min-height: 100vh; /* Ensure the body takes full viewport height */
+}
+
+/* Navigation Bar */
+header {
+  background-color: #FF3D00;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  flex: 1; /* Allow main content to expand and fill space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.stacked-section {
+  width: 80%;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-in-out;
+}
+
+.stacked-section .content {
+  text-align: center;
+}
+
+.stacked-section h2 {
+  font-size: 3rem;
+  color: #FF3D00;
+}
+
+.stacked-section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Animation: Reveal on scroll */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #FF3D00;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links li a:hover {
+  text-decoration: underline;
+}
