@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="mobile-device.css">
+  
+
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-section">
-            <img src="logo.jpg" alt="Company Logo">
+            <img src="images/logo.jpg" alt="Company Logo">
+        </div>
+        <div class="mobile-nav">
+            <nav>
+                <input type="checkbox" id="hamburger1" />
+                <label for="hamburger1"></label>
+                <ul class="nav-links">
+                    <li><a href="pageOne.html">Home</a></li>
+                    <li><a href="pageTwo.html">About</a></li>
+                    <li><a href="pageThree.html">Contact</a></li>
+                    <li><a href="pageFour.html">Services</a></li>
+                    <li><a href="pageFive.html">Portfolio</a></li>
+                    <li><a href="pageSix.html">Blog</a></li>
+                </ul>
+            </nav>
         </div>
         <nav class="navbar">
-            <ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="pageOne.html">Home</a></li>
                 <li><a href="pageTwo.html">About</a></li>
                 <li><a href="pageThree.html">Contact</a></li>
@@ -22,7 +44,38 @@
                 <li><a href="pageSix.html">Blog</a></li>
             </ul>
         </nav>
+        <div class="user-actions">
+            <!-- Enter shopping cart page here in href -->
+            <a href="checkout.html" id="cart-btn"><img src="images/shopping-cart.png" alt="Shopping Cart">  0</a>
+        </div>
     </header>
+    
+      
+    <!-- Countdown Timer -->
+    <section class="countdown-timer">
+        <h3>Limited-Time Offer!</h3>
+        <p>Hurry up! Sale ends in:</p>
+        <div class="timer">
+            <div class="time-box">
+                <span id="days">10</span>
+                <small>Days</small>
+            </div>
+            <div class="time-box">
+                <span id="hours">23</span>
+                <small>Hours</small>
+            </div>
+            <div class="time-box">
+                <span id="minutes">59</span>
+                <small>Minutes</small>
+            </div>
+            <div class="time-box">
+                <span id="seconds">30</span>
+                <small>Seconds</small>
+            </div>
+        </div>
+    </section>
+    
+    
     <main>
         <!-- Welcome Section -->
         <section class="welcome-section">
@@ -34,33 +87,99 @@
             </div>
         </section>
 
-        <!-- Shoe Categories Section -->
         <section class="shoe-category">
             <h3>Our Collections</h3>
             <div class="row">
                 <article class="shoe-card">
-                    <img src="dress-shoes.jpg" alt="Dress Shoes">
+                    <img src="images/dress-shoes.jpg" alt="Dress Shoes">
                     <h4>Dress Shoes</h4>
                     <p>Perfect for formal occasions, made with premium materials.</p>
                 </article>
                 <article class="shoe-card">
-                    <img src="athletic-shoes.jpg" alt="Athletic Shoes">
+                    <img src="images/athletic-shoes.jpg" alt="Athletic Shoes">
                     <h4>Athletic Shoes</h4>
                     <p>Designed for comfort and performance in all your activities.</p>
                 </article>
                 <article class="shoe-card">
-                    <img src="sneakers.jpg" alt="Sneakers">
+                    <img src="images/sneakers.jpg" alt="Sneakers">
                     <h4>Sneakers</h4>
                     <p>Casual and stylish, ideal for everyday wear.</p>
                 </article>
+                <article class="shoe-card">
+                    <img src="images/boots.jpg" alt="Boots">
+                    <h4>Boots</h4>
+                    <p>Durable and sturdy, perfect for outdoor adventures.</p>
+                </article>
+                <article class="shoe-card">
+                    <img src="images/sandals.jpg" alt="Sandals">
+                    <h4>Sandals</h4>
+                    <p>Light and airy, ideal for summer and beach outings.</p>
+                </article>
+                <article class="shoe-card">
+                    <img src="images/loafers.jpg" alt="Loafers">
+                    <h4>Loafers</h4>
+                    <p>Effortlessly stylish and comfortable for all-day wear.</p>
+                </article>
+                <article class="shoe-card">
+                    <img src="images/slippers.jpg" alt="Slippers">
+                    <h4>Slippers</h4>
+                    <p>Soft and cozy, perfect for relaxing at home.</p>
+                </article>
+                <article class="shoe-card">
+                    <img src="images/high-heels.jpg" alt="High Heels">
+                    <h4>High Heels</h4>
+                    <p>Elegant and chic, for a bold statement look.</p>
+                </article>
+                <article class="shoe-card">
+                    <img src="images/many-more.jpg" alt="Many More...">
+                    <h4>Others</h4>
+                    <p>Find whatever brand you are looking for.</p>
+                </article>
+                <article class="shoe-card">
+                    <img src="images/custom.jpg" alt="custom-shoes">
+                    <h4>Custom shoes</h4>
+                    <p>We customize shoes. Contact us to learn more.</p>
+                </article>
             </div>
         </section>
+        
+        <!--discount-section-->
+        <section class="discount-section">
+            <h3>Save More When You Shop More!!!!!</h3>
+            <h1>Limited time offer!</h1>
+            <div class="progress-bars">
+                <div class="progress-item">
+                    <label>Buy 2 Items</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%"></div>
+                    </div>
+                    <span>10% Off</span>
+                </div>
+                <div class="progress-item">
+                    <label>Buy 4 Items</label>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%"></div>
+                    </div>
+                    <span>20% Off</span>
+                </div>
+                <div class="progress-item">
+                    <label>Buy 6 Items</label>
+                    <div class="progress-bar">
+                    <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <span>30% Off</span>
+                </div>
+            </div>
+        </section>
+        
+        
+
     </main>
     <footer>
         <ul class="social-links">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://x.com/">X</a></li>
+            <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
         </ul>
     </footer>
 </body>
